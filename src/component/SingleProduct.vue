@@ -49,7 +49,8 @@ np
             transition: transform 0.8s;
             transform-style: preserve-3d;
             img {
-            height: 90%;
+                width: 100%;
+                margin-bottom: 0.5rem;
             }
         }
         &:hover .flip-card {
@@ -59,12 +60,15 @@ np
         .poster, .movie-info {
             position: absolute;
             backface-visibility: hidden;
-            height: 350px;
+            height: 410px;
             background-color: #1b1b1b;
+            border: solid white 0.01px;
         }
+        .movie-info {
+            transform: rotateY(180deg);
+            padding: 0.7rem;
+         }
 
     }
-    .movie-info {
-        transform: rotateY(180deg);
-    }
+
 </style>
