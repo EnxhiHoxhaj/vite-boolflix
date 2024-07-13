@@ -21,10 +21,11 @@ import SingleProduct from './SingleProduct.vue';
 <style lang="scss" scoped>
     .row {
         background-color: #1b1b1b;
-        min-height: 800px;
+        height:auto;
         width: 100vw;
         padding: 2rem;
-        display: flex;
+        gap: 1rem;
+        min-height: 50rem;
     }
 
 </style>

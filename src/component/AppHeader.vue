@@ -14,8 +14,6 @@
             </div>
         </nav>
     </header>
-
-
 </template>
 
 <style lang="scss" scoped>
