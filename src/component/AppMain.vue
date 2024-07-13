@@ -1,11 +1,12 @@
 <script>
 import SingleProduct from './SingleProduct.vue';
-    export default {
-        name: 'AppMain',
-        components: {
-            SingleProduct
-        }
-    }
+export default {
+    name: 'AppMain',
+    components: {
+        SingleProduct
+    },
+
+}
 </script>
 
 <template>
