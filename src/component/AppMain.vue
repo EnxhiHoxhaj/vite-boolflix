@@ -22,6 +22,9 @@ import SingleProduct from './SingleProduct.vue';
     .row {
         background-color: #1b1b1b;
         min-height: 800px;
+        width: 100vw;
+        padding: 2rem;
+        display: flex;
     }
 
 </style>

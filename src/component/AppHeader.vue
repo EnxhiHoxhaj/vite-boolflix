@@ -26,6 +26,7 @@
          }
     }
     .row {
+        width: 100vw;
         padding: 0 2rem 0;
         display: flex;
         justify-content: space-between;
