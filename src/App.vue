@@ -1,6 +1,6 @@
 <script>
 import axios from 'axios';
-import { store } from '../store';
+import { store } from './store';
 import AppHeader from './component/AppHeader.vue';
 import AppMain from './component/AppMain.vue';
 export default {
@@ -9,7 +9,24 @@ export default {
         AppHeader,
         AppMain,
     },
-
+    data(){
+        return{
+            store,
+        }
+    },
+    methods:{
+        getMovie(){
+            axios.
+            get(store.apiURL)
+            .then(ritorna=>{
+                console.log(ritorna);
+                store.filmList= ritorna;
+            })
+        }
+    },
+    created(){
+        this.getMovie();
+    }
 }
 </script>
 

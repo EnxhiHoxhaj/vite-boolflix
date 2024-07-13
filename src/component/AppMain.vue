@@ -1,18 +1,24 @@
 <script>
 import SingleProduct from './SingleProduct.vue';
+import { store } from '../store';
 export default {
     name: 'AppMain',
     components: {
-        SingleProduct
+        SingleProduct,
     },
+    data(){
+        return{
+            store,
+        }
+    }
 
 }
 </script>
 
 <template>
     <main>
-        <div class="row">
-            <SingleProduct />
+        <div class="row" v-for="movie in store.filmList">
+            <SingleProduct/>
         </div>
     </main>
 

@@ -1,6 +1,9 @@
 <script>
+    import { info } from 'sass';
     export default {
-        name: 'SingleProduct'
+        name: 'SingleProduct',
+        props: ['info'],
+
     }
 </script>
 np
@@ -18,7 +21,7 @@ np
                 </div>
                 <div class="orig-title">
                     <strong>Titolo originale:</strong>
-                    <span>Titolo originale del film</span>
+                    <span></span>
                 </div>
                 <div class="voto">
                     <strong>Voto:</strong>
