@@ -1,7 +1,15 @@
 <script>
-    export default {
-        name: 'AppHeader'
-    }
+import { store } from '../store';
+
+export default {
+    name: 'AppHeader',
+    
+    data(){
+        return{
+            store,
+        }
+    },
+}
 </script>
 
 <template>
@@ -9,8 +17,8 @@
         <nav class="row">
             <div class="col-2 logo">BOOLFLIX</div>
             <div class="col-3 search-name">
-                <input type="search">
-                <button>VIA</button>
+                <input type="search" v-model="store.filmSearch" @click.prevent="$emit('ricerca')">
+                <button type="submit">VIA</button>
             </div>
         </nav>
     </header>

@@ -44,7 +44,6 @@ np
         padding: 0;
         position: relative;
         perspective: 1000px;
-        margin-bottom: 2rem;
 
         .flip-card {
             position: absolute;

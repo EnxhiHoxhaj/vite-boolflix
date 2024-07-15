@@ -17,6 +17,8 @@ export default {
     methods:{
         getMovie(){
             axios.
+
+            // creare tramite api nello stor il cataolgo dei film
             get(store.apiURL)
             .then(ritorna=>{
                 console.log(ritorna.data.results);

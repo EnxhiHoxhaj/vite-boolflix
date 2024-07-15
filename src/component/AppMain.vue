@@ -18,7 +18,7 @@ export default {
 
 <template>
         <div class="row">
-            <div class="col movie-con" v-for="movie in store.filmList" :key="movie.id">
+            <div class="col movie-cont" v-for="movie in store.filmList" :key="movie.id">
                 <SingleProduct :info="movie" />
             </div>
         </div>
@@ -29,11 +29,13 @@ export default {
 <style lang="scss" scoped>
     .row {
         background-color: #1b1b1b;
-        width: 100vw;
         padding: 2rem;
         gap: 1rem;
         min-height: 1650px;
- 
+        .movie-cont {
+            width: fit-content;
+            height: fit-content;
+        }
     }
 
 </style>
