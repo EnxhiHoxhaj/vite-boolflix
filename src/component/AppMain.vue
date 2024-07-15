@@ -16,11 +16,11 @@ export default {
 </script>
 
 <template>
-    <main>
-        <div class="row" v-for="movie in store.filmList">
-            <SingleProduct/>
+        <div class="row">
+            <div class="col movie-con" v-for="movie in store.filmList">
+                <SingleProduct />
+            </div>
         </div>
-    </main>
 
 
 </template>
@@ -28,11 +28,11 @@ export default {
 <style lang="scss" scoped>
     .row {
         background-color: #1b1b1b;
-        height:auto;
         width: 100vw;
         padding: 2rem;
         gap: 1rem;
-        min-height: 50rem;
+        min-height: 1650px;
+ 
     }
 
 </style>

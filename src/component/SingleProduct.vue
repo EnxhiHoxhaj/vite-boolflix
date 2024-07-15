@@ -11,13 +11,13 @@ np
     <div class="col-2 movie-card">
         <div class="flip-card">
             <div class="poster">
-                <img src="https://m.media-amazon.com/images/I/81kz06oSUeL._AC_SL1500_.jpg" alt="movie poster">
-                <h3>TITOLO</h3>
+                <img :src="info.backdrop_path" alt="movie poster">
+                <h3></h3>
             </div>
             <div class="movie-info">
                 <div class="title">
                     <strong>Titolo:</strong>
-                    <span>Nome film</span>
+                    <span></span>
                 </div>
                 <div class="orig-title">
                     <strong>Titolo originale:</strong>
@@ -34,17 +34,17 @@ np
             </div>
         </div>
     </div>
-
-
+    
 </template>
 
 <style lang="scss" scoped>
     .movie-card {
-        height: fit-content;
+        width: calc(100vw / 6 - 3rem);
         color: white;
         padding: 0;
         position: relative;
         perspective: 1000px;
+        margin-bottom: 1rem;
 
         .flip-card {
             position: absolute;
@@ -61,9 +61,9 @@ np
         }
 
         .poster, .movie-info {
+            width: 100%;
             position: absolute;
             backface-visibility: hidden;
-            height: 410px;
             background-color: #1b1b1b;
             border: solid white 0.01px;
         }

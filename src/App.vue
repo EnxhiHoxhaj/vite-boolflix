@@ -19,8 +19,8 @@ export default {
             axios.
             get(store.apiURL)
             .then(ritorna=>{
-                console.log(ritorna);
-                store.filmList= ritorna;
+                console.log(ritorna.data.results);
+                store.filmList= ritorna.data.results;
             })
         }
     },
@@ -32,7 +32,9 @@ export default {
 
 <template>
     <AppHeader/>
-    <AppMain/>
+    <main>
+        <AppMain/>
+    </main>
 </template>
 
 <style lang="scss">
