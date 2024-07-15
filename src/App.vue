@@ -16,15 +16,21 @@ export default {
     },
     methods:{
         getMovie(){
-            axios.
-            // creare tramite api nello stor il cataolgo dei film
-            get(store.apiURL)
+            // riferimento catalogo film
+            let catalogoFilm = store.apiURL;
+            // aggiunta del filtro di ricerca per titolo
+            if(store.filmSearch!== '') {
+                catalogoFilm += `&${store.apiParametroricerca}=${store.filmSearch}`;
+            }
+            axios
+            .get(catalogoFilm)
             .then(ritorna=>{
                 console.log(ritorna.data.results);
-                store.filmList= ritorna.data.results;
+                store.filmList = ritorna.data.results;
             })
         }
     },
+
     created(){
         this.getMovie();
     }
