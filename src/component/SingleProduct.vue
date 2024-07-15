@@ -11,7 +11,7 @@ np
     <div class="col-2 movie-card">
         <div class="flip-card">
             <div class="poster">
-                <img :src="info.backdrop_path" alt="movie poster">
+                <img :src="`https://image.tmdb.org/t/p/w342/${info.poster_path}`">
                 <h3>{{info.title}}</h3>
             </div>
             <div class="movie-info">
@@ -44,7 +44,7 @@ np
         padding: 0;
         position: relative;
         perspective: 1000px;
-        margin-bottom: 1rem;
+        margin-bottom: 2rem;
 
         .flip-card {
             position: absolute;
