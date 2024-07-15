@@ -17,7 +17,6 @@ export default {
     methods:{
         getMovie(){
             axios.
-
             // creare tramite api nello stor il cataolgo dei film
             get(store.apiURL)
             .then(ritorna=>{
@@ -33,7 +32,7 @@ export default {
 </script>
 
 <template>
-    <AppHeader/>
+    <AppHeader @ricerca="getMovie"/>
     <main>
         <AppMain/>
     </main>

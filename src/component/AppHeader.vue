@@ -3,7 +3,7 @@ import { store } from '../store';
 
 export default {
     name: 'AppHeader',
-    
+
     data(){
         return{
             store,
@@ -17,8 +17,8 @@ export default {
         <nav class="row">
             <div class="col-2 logo">BOOLFLIX</div>
             <div class="col-3 search-name">
-                <input type="search" v-model="store.filmSearch" @click.prevent="$emit('ricerca')">
-                <button type="submit">VIA</button>
+                <input type="search" v-model="store.filmSearch">
+                <button type="submit" @click.prevent="$emit('ricerca')">VIA</button>
             </div>
         </nav>
     </header>
