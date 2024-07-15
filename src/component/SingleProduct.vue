@@ -12,24 +12,24 @@ np
         <div class="flip-card">
             <div class="poster">
                 <img :src="info.backdrop_path" alt="movie poster">
-                <h3></h3>
+                <h3>{{info.title}}</h3>
             </div>
             <div class="movie-info">
                 <div class="title">
                     <strong>Titolo:</strong>
-                    <span></span>
+                    <div>{{info.title}}</div>
                 </div>
                 <div class="orig-title">
                     <strong>Titolo originale:</strong>
-                    <span></span>
+                    <div>{{ info.original_title }}</div>
                 </div>
                 <div class="voto">
                     <strong>Voto:</strong>
-                    <span></span>
+                    <div></div>
                 </div>
                 <div class="plot">
                     <strong>Overview:</strong>
-                    <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio similique asperiores eligendi, ipsum nesciunt vitae modi atque sed nemo, beatae dolores perspiciatis animi ea! Dolores dolor molestias ipsa optio. Ducimus!</span>
+                    <div> {{ info.overview }}</div>
                 </div>
             </div>
         </div>
@@ -62,6 +62,7 @@ np
 
         .poster, .movie-info {
             width: 100%;
+            height: 25rem;
             position: absolute;
             backface-visibility: hidden;
             background-color: #1b1b1b;

@@ -1,6 +1,7 @@
 <script>
 import SingleProduct from './SingleProduct.vue';
 import { store } from '../store';
+import { info } from 'sass';
 export default {
     name: 'AppMain',
     components: {
@@ -17,8 +18,8 @@ export default {
 
 <template>
         <div class="row">
-            <div class="col movie-con" v-for="movie in store.filmList">
-                <SingleProduct />
+            <div class="col movie-con" v-for="movie in store.filmList" :key="movie.id">
+                <SingleProduct :info="movie" />
             </div>
         </div>
 
